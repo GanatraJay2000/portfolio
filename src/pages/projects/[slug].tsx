@@ -8,6 +8,7 @@ export default function Work() {
   return (
     <div className="flex bg-zinc-950 md:container mx-auto">
       {/* <img src="/pic4.jpg" className='h-full inline-block' alt="" /> */}
+      
       <div className="p-5 md:p-16 text-zinc-200 text-lg">
         <div className="flex">
           <a href="/" className='text-zinc-100 mb-5 block rounded-3xl'>/Home</a>
