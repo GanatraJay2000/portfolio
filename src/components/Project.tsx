@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 type ProjectProps = {
   title: string;
   img:string;
@@ -11,11 +13,11 @@ type ProjectProps = {
 export default function Project({img, title, labels, accent='sky', slug, addFilter, liveSite}:ProjectProps) {
   return (
     <div className="relative bg-zinc-700 overflow-hidden rounded-lg flex flex-col">
-      <a href={`/projects/${slug}`} >
+      <Link href={`/projects/${slug}`} >
       <img src={img} alt={title} className="rounded-tr-lg rounded-tl-lg" />
-      </a>
+      </Link>
       <div className="flex flex-col grow">
-        <a href={`/projects/${slug}`} className="text-2xl px-3 pt-2 pb-3 text-white bg-zinc-600">{title}</a>
+        <Link href={`/projects/${slug}`} className="text-2xl px-3 pt-2 pb-3 text-white bg-zinc-600">{title}</Link>
         <div className={`px-3 pt-3 pb-3`}>
           {
             labels.map(label=>{
@@ -24,10 +26,10 @@ export default function Project({img, title, labels, accent='sky', slug, addFilt
           }
         </div>
         <div className="mt-auto mb-3  px-2 flex">
-          <a href={`/projects/${slug}`} className="bg-zinc-100 rounded text-zinc-800 px-3 py-1 text-sm">Read More <i className="bi bi-arrow-right ml-2"></i></a>
+          <Link href={`/projects/${slug}`} className="bg-zinc-100 rounded text-zinc-800 px-3 py-1 text-sm">Read More <i className="bi bi-arrow-right ml-2"></i></Link>
           {
             liveSite && (
-              <a href={liveSite} target="_blank" className="ml-2 bg-zinc-100 rounded text-zinc-800 px-3 py-1 text-sm">Live Site <i className="bi bi-box-arrow-up-right ml-2 "></i></a>
+              <Link href={liveSite} target="_blank" className="ml-2 bg-zinc-100 rounded text-zinc-800 px-3 py-1 text-sm">Live Site <i className="bi bi-box-arrow-up-right ml-2 "></i></Link>
             )
           }
         </div>

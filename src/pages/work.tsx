@@ -1,5 +1,6 @@
 import Project from '@/components/Project';
 import savedProjects from '@/pages/projects/projects.json'
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 export default function Work() {
@@ -30,7 +31,7 @@ export default function Work() {
     <div className="flex bg-zinc-950 md:container mx-auto">
       {/* <img src="/pic1.jpg" className='h-full inline-block' alt="" /> */}
       <div className="w-full p-5 md:p-16 text-zinc-200 text-lg">
-        <a href="/" className='text-zinc-200 mb-5 block rounded-3xl'>/Home</a>
+        <Link href="/" className='text-zinc-200 mb-5 block rounded-3xl'>/Home</Link>
         <h1 className="font-amiri font-bold text-5xl">Projects</h1>
         <div id="filter" className="w-full bg-zinc-600 p-3 mt-4 rounded-lg outline outline-offset-4 outline-2">
           {filter.length ?(

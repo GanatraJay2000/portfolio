@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router'
 import savedProjects from '@/pages/projects/projects.json'
+import Link from 'next/link'
 
 export default function Work() {
   const router = useRouter()
@@ -8,11 +9,11 @@ export default function Work() {
   return (
     <div className="flex bg-zinc-950 md:container mx-auto">
       {/* <img src="/pic4.jpg" className='h-full inline-block' alt="" /> */}
-      
+
       <div className="p-5 md:p-16 text-zinc-200 text-lg">
         <div className="flex">
-          <a href="/" className='text-zinc-100 mb-5 block rounded-3xl'>/Home</a>
-          <a href="/work" className='ml-3 text-zinc-100 mb-5 block rounded-3xl'>/Projects</a>
+          <Link href="/" className='text-zinc-100 mb-5 block rounded-3xl'>/Home</Link>
+          <Link href="/work" className='ml-3 text-zinc-100 mb-5 block rounded-3xl'>/Projects</Link>
         </div>
         {
           project ? (
@@ -29,7 +30,7 @@ export default function Work() {
                     <div className="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10">
                       {
                         project.images.map(image=>{
-                          return(<a target="image" href={`/images/${image}`}><img src={`/images/${image}`} alt={image} className="rounded-lg" /></a>)
+                          return(<Link target="image" href={`/images/${image}`}><img src={`/images/${image}`} alt={image} className="rounded-lg" /></Link>)
                         })
                       }
                     </div>
@@ -38,7 +39,7 @@ export default function Work() {
                     project.link && (
                       <div className="">
                         <h2 className='text-4xl mb-5 font-amiri'>Live Site</h2>
-                        <a target='_blank' href={project.link}>{project.link}</a>
+                        <Link target='_blank' href={project.link}>{project.link}</Link>
                       </div>
                     )
                   }
@@ -59,7 +60,7 @@ export default function Work() {
           ) : (
             <div className="">
               <h1 className="font-amiri font-bold text-5xl mb-2">Loading...</h1>
-              <p>If stuck on Loading, please check URL or return to <a href="/work" className='text-sky-400'>Works</a> page...</p>
+              <p>If stuck on Loading, please check URL or return to <Link href="/work" className='text-sky-400'>Works</Link> page...</p>
             </div>
           )
         }
