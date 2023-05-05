@@ -29,8 +29,8 @@ export default function Work() {
                     <h2 className='text-4xl mb-5 font-amiri'>Images</h2>
                     <div className="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10">
                       {
-                        project.images.map(image=>{
-                          return(<Link target="image" href={`/images/${image}`}><img src={`/images/${image}`} alt={image} className="rounded-lg" /></Link>)
+                        project.images.map((image, iidx)=>{
+                          return(<Link key={iidx} target="image" href={`/images/${image}`}><img src={`/images/${image}`} alt={image} className="rounded-lg" /></Link>)
                         })
                       }
                     </div>
@@ -46,9 +46,9 @@ export default function Work() {
                 </div>
                 <div className="flex flex-wrap lg:flex-col">
                   {
-                    project.stack.map(label=>{
+                    project.stack.map((label, lidx)=>{
                       return (
-                        <div className="">
+                        <div key={lidx} className="">
                           <div className={`text-sm lg:inline-block bg-zinc-200 text-zinc-900 mr-2 mb-2 lg:mb-4 px-3 py-1 rounded lg:rounded-full shrink`}>{label}</div>
                         </div>
                       )

@@ -20,8 +20,8 @@ export default function Project({img, title, labels, accent='sky', slug, addFilt
         <Link href={`/projects/${slug}`} className="text-2xl px-3 pt-2 pb-3 text-white bg-zinc-600">{title}</Link>
         <div className={`px-3 pt-3 pb-3`}>
           {
-            labels.map(label=>{
-              return(<div onClick={()=>addFilter(label)} className={`cursor-pointer text-sm inline-block bg-${accent}-200 text-zinc-900 mr-2 mb-2 px-3 py-1 rounded`}>{label}</div>)
+            labels.map((label, lidx)=>{
+              return(<div key={lidx} onClick={()=>addFilter(label)} className={`cursor-pointer text-sm inline-block bg-${accent}-200 text-zinc-900 mr-2 mb-2 px-3 py-1 rounded`}>{label}</div>)
             })
           }
         </div>

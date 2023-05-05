@@ -35,8 +35,8 @@ export default function Work() {
         <h1 className="font-amiri font-bold text-5xl">Projects</h1>
         <div id="filter" className="w-full bg-zinc-600 p-3 mt-4 rounded-lg outline outline-offset-4 outline-2">
           {filter.length ?(
-            filter.map(f=>{
-              return(<div className={`text-sm inline-block bg-sky-200 text-zinc-900 mr-2 my-1 px-3 py-1 rounded`}>{f} <i onClick={()=>{removeFilter(f)}} className="cursor-pointer bi bi-x-lg ml-4"></i></div>)
+            filter.map((f, fidx)=>{
+              return(<div key={fidx} className={`text-sm inline-block bg-sky-200 text-zinc-900 mr-2 my-1 px-3 py-1 rounded`}>{f} <i onClick={()=>{removeFilter(f)}} className="cursor-pointer bi bi-x-lg ml-4"></i></div>)
             })
           ) : 
             <div className={`text-sm inline-block bg-sky-200 text-zinc-900 mr-2 px-3 py-1 rounded`}>Filter via Labels</div>
@@ -44,8 +44,8 @@ export default function Work() {
         </div>
         <div className="grid lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-10 mt-10">
           {
-            projects.map(project=>{
-              return(<Project liveSite={project.link} addFilter={addFilter} slug={project.slug} labels={project.stack} img={`/images/${project.image}`} title={project.text} />)
+            projects.map((project, pidx)=>{
+              return(<Project key={pidx} liveSite={project.link} addFilter={addFilter} slug={project.slug} labels={project.stack} img={`/images/${project.image}`} title={project.text} />)
             })
           }
         </div>
