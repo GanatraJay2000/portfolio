@@ -1,0 +1,82 @@
+[
+    {
+        "slug":"digital-student-cards",
+        "text":"Digital Student Cards",
+        "image":"dhc.jpg",
+        "stack":["React.js", "Node.js", "Mongo DB", "Bootstrap"],
+        "hiddenStack":["JavaScript"],
+        "desc":"Developed a dynamic portal used by different Educational Institutes under Somaiya Trust for storing health, scholastic, co-scholastic details of students, across India. Led the development of a new design for the portal, used React as JavaScript framework to develop the frontend, created multiple components, used various libraries, implemented REST APIs and hosted it on Vercel.",
+        "images":["dhc1.jpg", "dhc2.jpg", "dhc3.jpg", "dhc4.jpg", "dhc5.jpg"]
+    },
+    {
+        "slug":"atm-location-recommendation-system",
+        "text":"ATM Location Recommendation System",
+        "image":"atm.jpg",
+        "stack":["Python", "Here Dev API", "Tailwind CSS", "HTML", "CSS", "JavaScript", "SASS"],
+        "desc":"A portal that helps find the best location to set up an ATM in a region/area based on geolocation parameters using clustering algorithms",
+        "images":["atm1.png", "atm2.png", "atm3.png", "atm4.png"]
+    },
+    {
+        "slug":"hearing-hearts",
+        "text":"Hearing Hearts",
+        "link":"https://hearinghearts.in/",
+        "image":"hh.jpg",
+        "stack":["PhP", "Contentful CMS", "Tailwind CSS", "HTML", "CSS", "JavaScript"],
+        "desc":"A portfolio website for Hearing Hearts Clinic a center of Advance Hearing-, Speech-, and Health Management. The site was developed using NextJs first but the server was not able to properly render the build files. PhP was used then to connect with the headless server of Contentful which is used as a backend database.",
+        "images":["hh1.jpg", "hh2.jpg", "hh3.jpg"]
+    },
+    {
+        "slug":"event-management-system",
+        "text":"Event Management System (EMS)",
+        "image":"ems.jpg",
+        "stack":["PhP", "MySQL", "HTML", "CSS", "Bootstrap", "JavaScript", "jQuery"],
+        "desc":"Led a team of 5 software developers in creating an Event Management System (EMS) that integrated 5 solutions for faculties of all departments for event management to a Unified Platform. Utilized Object Oriented Concepts in PhP with MySQL to create a backend with HTML, CSS, JS, and Bootstrap for the frontend to develop the portal and deployed it on the college server.",
+        "images":["ems1.jpg", "ems2.jpg", "ems3.jpg", "ems4.jpg", "ems5.jpg", "ems6.jpg"]
+    },
+    {
+        "slug":"josh-foundation",
+        "text":"Josh Foundation",
+        "link":"https://joshindia.org",
+        "image":"josh.jpg",
+        "stack":["Wordpress", "PhP", "MariaDB", "Bootstrap", "HTML", "CSS", "JavaScript"],
+        "desc":"A portfolio website for Josh Foundation to showcase their efforts in curing hearing impairment in children. Created a custom Wordpress theme using PhP and deployed the portfolio with the help of multiple Wordpress Plugins as well.",
+        "images":["josh1.jpg", "josh2.jpg", "josh3.jpg", "josh4.jpg", "josh5.jpg", "josh6.jpg"]
+    },
+    {
+        "slug":"imperium-edutech",
+        "text":"Imperium EduTech",
+        "link":"https://imperiumedutech.com/",
+        "image":"imperium.jpg",
+        "stack":["Vue.js", "Laravel", "PhP", "MySQL", "Tailwind CSS"],
+        "hiddenStack":["JavaScript"],
+        "desc":"A portfolio website for Imperium EduTech, a startup with a unique approach to building content to help you learn and attain results fruitfully.",
+        "images":["imperium1.jpg","imperium2.jpg","imperium3.jpg","imperium4.jpg","imperium5.jpg","imperium6.jpg"]
+    },
+    {
+        "slug":"smartle",
+        "text":"Smartle.co",
+        "link":"https://www.smartle.co/",
+        "image":"smartle.jpg",
+        "stack":["React.js", "AWS", "Node.js", "Mongo DB", "Express"],
+        "hiddenStack":["JavaScript"],
+        "desc":"A portfolio website for Smartle.co, a LMS based system for teaching smart skills for the 21st Century Learners. The website was built to showcase their porduct and courses for enterprises as well as parents.",
+        "images":["smartle1.jpg","smartle2.jpg","smartle3.jpg","smartle4.jpg","smartle5.jpg","smartle6.jpg","smartle7.jpg","smartle8.jpg"]
+    },
+    {
+        "slug":"devangi-dalal",
+        "text":"Devangi Dalal",
+        "link":"https://devangidalal.com/",
+        "image":"devangi.jpg",
+        "stack":["Wordpress"],
+        "desc":"A portfolio website for Devangi Dalal a Humanitarian Award Winner known for her works in Audiology and Speech Language Pathology. Worked on wrbsite created for Devangi and helped maintain it for some time.",
+        "images":["devangi1.jpg","devangi2.jpg","devangi3.jpg","devangi4.jpg"]
+    },
+    {
+        "slug":"result-analysis-system",
+        "text":"Result Analysis System",
+        "image":"result.jpg",
+        "stack":["PhP", "MySQL", "Bootstrap", "CSS", "HTML", "JavaScript", "jQuery", "SASS"],
+        "desc":"A web-app created for my department at undergraduate college for analysis of results generated by the Mumbai University, getting data analytics from pdfs and excel sheets.",
+        "images":["result1.jpg","result2.jpg","result3.jpg","result4.jpg","result5.jpg","result6.jpg","result7.jpg","result8.jpg","result9.jpg","result10.jpg"]
+    }
+]
