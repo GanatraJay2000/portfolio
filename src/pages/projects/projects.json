@@ -17,6 +17,15 @@
         "images":["atm1.png", "atm2.png", "atm3.png", "atm4.png"]
     },
     {
+        "slug":"nisp",
+        "text":"KJ Somaiya NISP Website",
+        "link":"https://nisp.kjsieit.in/",
+        "image":"nisp1.png",
+        "stack":["PhP", "Bootstrap", "HTML", "CSS", "JavaScript"],
+        "desc":"A website for the NISP Committee of K. J. Somaiya Institute of Engineering and Information Technology.",
+        "images":["nisp2.png","nisp3.png","nisp4.png","nisp5.png","nisp6.png","nisp7.png","nisp8.png"]
+    },
+    {
         "slug":"hearing-hearts",
         "text":"Hearing Hearts",
         "link":"https://hearinghearts.in/",
